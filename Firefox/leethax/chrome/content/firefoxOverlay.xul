@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<overlay id="leethax" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://leethax/content/overlay.js" />
+</overlay>

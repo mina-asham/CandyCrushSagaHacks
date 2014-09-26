@@ -1,0 +1,8 @@
+content    leethax chrome/content/
+overlay    chrome://browser/content/browser.xul	chrome://leethax/content/firefoxOverlay.xul
+
+component  {af99f54d-2e41-7542-8ff8-937bc8156ef6} components/HttpProtocolHandlerProxy.js
+contract   @mozilla.org/network/protocol;1?name=http {af99f54d-2e41-7542-8ff8-937bc8156ef6}
+
+component  {ff86a776-ce15-452f-b345-fc1ef0758bc3} components/HttpProtocolHandlerProxy.js
+contract   @mozilla.org/network/protocol;1?name=https {ff86a776-ce15-452f-b345-fc1ef0758bc3}
