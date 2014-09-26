@@ -59,8 +59,10 @@ class CCrush(object):
             "seed": seed,
             "reason": 0,
         }
+        
         dict["userId"] = self.userId
-        dict["cs"] = hashlib.md5("%(episodeId)s:%(levelId)s:%(score)s:%(timeLeftPercent)s:%(userId):%(seed)s:BuFu6gBFv79BH9hk" % dic).hexdigest()[:6]
+        dict["cs"] = hashlib.md5("%(episodeId)s:%(levelId)s:%(score)s:%(timeLeftPercent)s:%(userId)s:%(seed)s:BuFu6gBFv79BH9hk" % dic).hexdigest()[:6]
+        del dict["userId"]
 
         params = {"_session": self.session, "arg0": json.dumps(dict)}
         return requests.get("http://candycrush.king.com/api/gameEnd", params=params)
